@@ -25,7 +25,12 @@ warnings.filterwarnings('ignore')
 # ──────────────────────────────────────────────────────────────
 # PATH CONFIGURATION
 # ──────────────────────────────────────────────────────────────
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# PROJECT_ROOT configuration (handles running inside Jupyter notebooks/exec where __file__ is undefined)
+try:
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+except NameError:
+    PROJECT_ROOT = os.getcwd()
+
 
 # Find actual dataset paths dynamically (handles special characters)
 _datasets_parent = None
