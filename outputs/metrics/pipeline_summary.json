@@ -1,0 +1,11 @@
+{
+  "pipeline_run": {
+    "timestamp": "2026-06-06 23:32:36",
+    "duration_seconds": 103.6,
+    "acn_sessions": 14947,
+    "urbanev_grids": 247,
+    "urbanev_timestamps": 8640,
+    "figures_generated": 29,
+    "metrics_files": 4
+  }
+}

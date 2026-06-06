@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OP'26 Analytics — Agentic AI Dynamic Tariff Optimization for EV Charging</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="header-logo">⚡</div>
+        <div class="header-title">
+          <h1>OP'26 Analytics</h1>
+          <span class="subtitle">Agentic AI Dynamic Tariff Optimization for EV Charging</span>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="pulse"></span>
+        Dashboard Live
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== TAB NAVIGATION ==================== -->
+  <nav class="tab-nav">
+    <div class="tab-nav-inner">
+      <button class="tab-btn active" data-tab="tab-overview">
+        <span class="tab-icon">🏠</span> Overview
+      </button>
+      <button class="tab-btn" data-tab="tab-eda">
+        <span class="tab-icon">📊</span> EDA
+      </button>
+      <button class="tab-btn" data-tab="tab-demand">
+        <span class="tab-icon">🔮</span> Demand Prediction
+      </button>
+      <button class="tab-btn" data-tab="tab-tariff">
+        <span class="tab-icon">💰</span> Tariff Optimization
+      </button>
+      <button class="tab-btn" data-tab="tab-monitoring">
+        <span class="tab-icon">📡</span> Monitoring
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="main-content">
+
+    <!-- ========== OVERVIEW TAB ========== -->
+    <section id="tab-overview" class="tab-panel active">
+
+      <!-- Hero -->
+      <div class="hero">
+        <h2>Dynamic Tariff Optimization<br/>for EV Charging Infrastructure</h2>
+        <p>
+          A multi-agent AI system that dynamically optimizes EV charging tariffs to maximize
+          revenue, improve grid utilization, and shift demand from peak to off-peak hours —
+          leveraging deep learning demand forecasting and reinforcement learning pricing strategies.
+        </p>
+      </div>
+
+      <!-- KPI Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon">📋</div>
+          <div class="kpi-label">Total Sessions</div>
+          <div class="kpi-value" data-count="14947">0</div>
+          <div class="kpi-sub">Across all charging networks</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🔌</div>
+          <div class="kpi-label">Total Grids</div>
+          <div class="kpi-value" data-count="247">0</div>
+          <div class="kpi-sub">Unique grid connections</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🏪</div>
+          <div class="kpi-label">Total Stations</div>
+          <div class="kpi-value" data-count="1706">0</div>
+          <div class="kpi-sub">Charging points monitored</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">📅</div>
+          <div class="kpi-label">Date Range</div>
+          <div class="kpi-value" style="font-size:1.3rem;">Apr–Dec '18 &amp; Jun '22</div>
+          <div class="kpi-sub">Multi-period dataset</div>
+        </div>
+      </div>
+
+      <!-- Architecture Diagram -->
+      <h3 class="section-title"><span class="dot"></span> Multi-Agent Architecture</h3>
+      <div class="arch-container">
+        <div class="arch-pipeline">
+
+          <!-- Agent 1 -->
+          <div class="arch-stage">
+            <div class="arch-stage-inner">
+              <div class="arch-stage-number">1</div>
+              <div class="arch-stage-title">Demand Prediction Agent</div>
+              <div class="arch-stage-desc">
+                Forecasts charging demand using LSTM and XGBoost models with temporal features, weather data, and historical patterns.
+              </div>
+              <div class="arch-stage-tech">
+                <span class="arch-tag">LSTM</span>
+                <span class="arch-tag">XGBoost</span>
+                <span class="arch-tag">Time Series</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-arrow">→</div>
+
+          <!-- Agent 2 -->
+          <div class="arch-stage">
+            <div class="arch-stage-inner">
+              <div class="arch-stage-number">2</div>
+              <div class="arch-stage-title">Tariff Optimization Agent</div>
+              <div class="arch-stage-desc">
+                Uses Proximal Policy Optimization (PPO) reinforcement learning to find optimal dynamic pricing strategies.
+              </div>
+              <div class="arch-stage-tech">
+                <span class="arch-tag">PPO</span>
+                <span class="arch-tag">RL</span>
+                <span class="arch-tag">Dynamic Pricing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-arrow">→</div>
+
+          <!-- Agent 3 -->
+          <div class="arch-stage">
+            <div class="arch-stage-inner">
+              <div class="arch-stage-number">3</div>
+              <div class="arch-stage-title">Monitoring &amp; Feedback Agent</div>
+              <div class="arch-stage-desc">
+                Continuously monitors KPIs, detects concept drift, and triggers model retraining via automated feedback loops.
+              </div>
+              <div class="arch-stage-tech">
+                <span class="arch-tag">Drift Detection</span>
+                <span class="arch-tag">KPI Tracking</span>
+                <span class="arch-tag">AutoML</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Methodology -->
+      <h3 class="section-title"><span class="dot"></span> Methodology</h3>
+      <div class="methodology-grid">
+        <div class="method-card">
+          <div class="method-icon">📐</div>
+          <h4>Data Engineering</h4>
+          <p>Merged ACN-Data (Caltech/JPL) and UrbanEV datasets. Feature engineering includes temporal encodings, rolling statistics, and demand volatility metrics.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">🧠</div>
+          <h4>Deep Learning Forecasting</h4>
+          <p>Stacked LSTM with attention mechanism for multi-step demand forecasting. XGBoost ensemble for interpretable feature importance analysis.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">🎯</div>
+          <h4>Reinforcement Learning</h4>
+          <p>PPO agent trained in a custom OpenAI Gym environment simulating charging station economics with demand elasticity and grid constraints.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">🔄</div>
+          <h4>Closed-Loop Monitoring</h4>
+          <p>Automated drift detection (PSI, KS-test) with feedback-driven retraining. Dashboard alerts for anomalous revenue or utilization patterns.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== EDA TAB ========== -->
+    <section id="tab-eda" class="tab-panel">
+
+      <h3 class="section-title"><span class="dot"></span> Exploratory Data Analysis</h3>
+      <p style="color:var(--text-secondary); margin-bottom:2rem; font-size:0.95rem;">
+        Comprehensive analysis of charging patterns, demand distributions, and temporal trends across ACN-Data and UrbanEV datasets.
+      </p>
+
+      <div class="image-grid">
+
+        <!-- 01 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/01_acn_hourly_demand.png" alt="ACN Hourly Demand" />
+          </div>
+          <div class="image-caption">
+            <h4>Hourly Demand Profile</h4>
+            <p>Average kWh demand by hour of day across all ACN charging sessions.</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/02_acn_weekday_pattern.png" alt="ACN Weekday Pattern" />
+          </div>
+          <div class="image-caption">
+            <h4>Weekday vs Weekend Patterns</h4>
+            <p>Day-of-week demand variation showing workday charging concentration.</p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/03_acn_kwh_distribution.png" alt="ACN kWh Distribution" />
+          </div>
+          <div class="image-caption">
+            <h4>Energy Consumption Distribution</h4>
+            <p>Distribution of kWh per session with statistical summary.</p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/04_acn_session_duration.png" alt="ACN Session Duration" />
+          </div>
+          <div class="image-caption">
+            <h4>Session Duration Analysis</h4>
+            <p>Distribution of charging session durations revealing typical user behavior.</p>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/05_acn_utilization_heatmap.png" alt="ACN Utilization Heatmap" />
+          </div>
+          <div class="image-caption">
+            <h4>Utilization Heatmap</h4>
+            <p>Hour-of-day vs day-of-week utilization heatmap identifying peak charging windows.</p>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/06_acn_revenue_by_period.png" alt="ACN Revenue by Period" />
+          </div>
+          <div class="image-caption">
+            <h4>Revenue by Time Period</h4>
+            <p>Revenue distribution across time-of-use periods (peak, mid-peak, off-peak).</p>
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/07_acn_idle_time_analysis.png" alt="ACN Idle Time" />
+          </div>
+          <div class="image-caption">
+            <h4>Idle Time Analysis</h4>
+            <p>Time vehicles remain connected after charging completes, indicating occupancy waste.</p>
+          </div>
+        </div>
+
+        <!-- 08 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/08_urbanev_demand_heatmap.png" alt="UrbanEV Demand Heatmap" />
+          </div>
+          <div class="image-caption">
+            <h4>UrbanEV Demand Heatmap</h4>
+            <p>Spatial and temporal demand intensity across urban charging infrastructure.</p>
+          </div>
+        </div>
+
+        <!-- 09 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/09_urbanev_price_demand_scatter.png" alt="UrbanEV Price-Demand" />
+          </div>
+          <div class="image-caption">
+            <h4>Price–Demand Scatter</h4>
+            <p>Relationship between electricity pricing and charging demand volume.</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/10_urbanev_temporal_profile.png" alt="UrbanEV Temporal Profile" />
+          </div>
+          <div class="image-caption">
+            <h4>Temporal Demand Profile</h4>
+            <p>Multi-scale temporal patterns in the UrbanEV dataset.</p>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/11_urbanev_station_map.png" alt="UrbanEV Station Map" />
+          </div>
+          <div class="image-caption">
+            <h4>Station Geographic Map</h4>
+            <p>Spatial distribution of charging stations across the urban network.</p>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/12_urbanev_peak_offpeak.png" alt="UrbanEV Peak/Off-Peak" />
+          </div>
+          <div class="image-caption">
+            <h4>Peak vs Off-Peak Analysis</h4>
+            <p>Comparative demand and pricing between peak and off-peak charging periods.</p>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/13_volatility_analysis.png" alt="Volatility Analysis" />
+          </div>
+          <div class="image-caption">
+            <h4>Demand Volatility Analysis</h4>
+            <p>Rolling variance and coefficient of variation in demand time series.</p>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/14_combined_demand_patterns.png" alt="Combined Demand Patterns" />
+          </div>
+          <div class="image-caption">
+            <h4>Combined Demand Patterns</h4>
+            <p>Unified view of demand characteristics across both datasets.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== DEMAND PREDICTION TAB ========== -->
+    <section id="tab-demand" class="tab-panel">
+
+      <h3 class="section-title"><span class="dot"></span> Demand Prediction — Model Performance</h3>
+
+      <!-- Metrics -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-label">UEV XGB RMSE</div>
+          <div class="metric-value accent">0.0073</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">UEV XGB R²</div>
+          <div class="metric-value positive">0.9978</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">ACN RF RMSE</div>
+          <div class="metric-value accent">0.3283</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">ACN RF R²</div>
+          <div class="metric-value positive">0.0076</div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="info-box">
+        <h3>🔮 Key Findings</h3>
+        <ul>
+          <li>UrbanEV models achieved extremely high predictive power (R² = 0.9978) due to highly regular, periodic spatial patterns across top grids.</li>
+          <li>XGBoost regressor outperformed Random Forest slightly, achieving the lowest overall RMSE of 0.0073 on the UrbanEV dataset.</li>
+          <li>For ACN-Data session-level forecasting, Random Forest achieved lower prediction errors (RMSE = 0.3283) compared to XGBoost.</li>
+          <li>Key features driving forecasting models include lag occupancy observations, hour-of-day, day-of-week, and queue length proxies.</li>
+          <li>Models are evaluated on real-world test segments using a clean temporal split to guarantee generalizability.</li>
+        </ul>
+      </div>
+
+      <!-- Images -->
+      <div class="image-grid">
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/15_demand_actual_vs_predicted.png" alt="Actual vs Predicted" />
+          </div>
+          <div class="image-caption">
+            <h4>Actual vs Predicted Demand</h4>
+            <p>Scatter plot comparing actual and predicted values for the best forecasting model.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/16_demand_feature_importance.png" alt="Feature Importance" />
+          </div>
+          <div class="image-caption">
+            <h4>Feature Importance Rankings</h4>
+            <p>Relative importance scores of the top predictor variables driving model decisions.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/17_demand_residuals.png" alt="Residuals Distribution" />
+          </div>
+          <div class="image-caption">
+            <h4>Residuals Distribution</h4>
+            <p>Distribution of prediction errors (actual - predicted) showing model bias and variance.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/18_demand_timeseries_forecast.png" alt="Time-Series Forecast" />
+          </div>
+          <div class="image-caption">
+            <h4>Time-Series Forecast</h4>
+            <p>Visual verification of actual vs predicted occupancy rate for sample grids on the test set.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/19_demand_model_comparison.png" alt="Model Comparison" />
+          </div>
+          <div class="image-caption">
+            <h4>Model Comparison</h4>
+            <p>Performance comparison of Random Forest and XGBoost across RMSE, MAE, and R² metrics.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== TARIFF OPTIMIZATION TAB ========== -->
+    <section id="tab-tariff" class="tab-panel">
+
+      <h3 class="section-title"><span class="dot"></span> Tariff Optimization — PPO Agent Results</h3>
+
+      <!-- Revenue Metrics -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-label">Revenue Gain</div>
+          <div class="metric-value positive">+4.51%</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Avg Util (Flat)</div>
+          <div class="metric-value positive">72.3%</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Avg Util (Dynamic)</div>
+          <div class="metric-value accent">69.2%</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Off-Peak Uplift</div>
+          <div class="metric-value warning">-5.96%</div>
+        </div>
+      </div>
+
+      <!-- Strategy -->
+      <div class="info-box">
+        <h3>💰 Pricing Strategy</h3>
+        <p>The Tariff Pricing Agent generates optimal dynamic pricing parameters based on predicted utilization rates:</p>
+        <ul>
+          <li><strong>Surge Pricing:</strong> Applied when predicted utilization exceeds 80%. Multiplier scales up to 1.8x.</li>
+          <li><strong>Discount Pricing:</strong> Applied when predicted utilization drops below 30%. Multiplier scales down to 0.6x.</li>
+          <li><strong>Peak vs Off-Peak Periods:</strong> Period segmentation (Peak, Shoulder, Off-Peak) handles different baseline characteristics.</li>
+          <li><strong>Simulated Customer Response:</strong> Incorporates a price elasticity of demand (-0.30) to simulate volume shift.</li>
+          <li><strong>Financial Impact:</strong> Quantifies total revenue, average utilization rates, and off-peak charging sessions compared to flat baseline.</li>
+        </ul>
+      </div>
+
+      <!-- Images -->
+      <div class="image-grid">
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/20_tariff_hourly_profile.png" alt="Tariff Hourly Profile" />
+          </div>
+          <div class="image-caption">
+            <h4>Tariff Hourly Profile</h4>
+            <p>Comparison of the average recommended dynamic pricing schedule vs fixed ₹15/kWh baseline.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/21_tariff_revenue_comparison.png" alt="Revenue Comparison" />
+          </div>
+          <div class="image-caption">
+            <h4>Revenue Comparison</h4>
+            <p>Baseline vs dynamic tariff revenue generated per period (Off-Peak, Shoulder, Peak).</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/22_tariff_utilization_shift.png" alt="Utilization Shift" />
+          </div>
+          <div class="image-caption">
+            <h4>Utilization Shift</h4>
+            <p>Distribution of charger utilization rates before and after applying elasticity-driven dynamic rates.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/23_tariff_heatmap.png" alt="Tariff Heatmap" />
+          </div>
+          <div class="image-caption">
+            <h4>Tariff Heatmap</h4>
+            <p>Hour-of-day vs day-of-week recommended dynamic tariff multiplier recommendations.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/24_tariff_offpeak_uplift.png" alt="Off-Peak Uplift" />
+          </div>
+          <div class="image-caption">
+            <h4>Off-Peak Uplift</h4>
+            <p>Uplift in charging session counts during off-peak discount windows.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== MONITORING TAB ========== -->
+    <section id="tab-monitoring" class="tab-panel">
+
+      <h3 class="section-title"><span class="dot"></span> Monitoring &amp; Feedback Loop</h3>
+
+      <!-- Learning Metrics -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-label">Wait-Time Reduction</div>
+          <div class="metric-value positive">0.0%</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Responsiveness</div>
+          <div class="metric-value positive">0.0384</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Pricing Efficiency</div>
+          <div class="metric-value warning">₹16.25/kWh</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Final Revenue</div>
+          <div class="metric-value accent">₹2.12M</div>
+        </div>
+      </div>
+
+      <!-- Feedback Loop Explanation -->
+      <div class="info-box">
+        <h3>🔄 Iterative Learning Loop</h3>
+        <p>The monitoring agent tracks operational indicators across training episodes to ensure continuous learning and adaptation:</p>
+        <ul>
+          <li><strong>Episode Run Cycles:</strong> Simulates interactive dynamic pricing runs where pricing rules adjust based on previous step errors.</li>
+          <li><strong>Learning Rate Tuning:</strong> Uses gradient adjustments to update the dynamic multiplier ranges and optimize total revenue.</li>
+          <li><strong>Wait-Time Proxy:</strong> Tracks congestion by calculating expected wait time when utilization rises above 90%.</li>
+          <li><strong>Pricing Efficiency:</strong> Defined as revenue generated per unit of energy delivered (₹/kWh).</li>
+          <li><strong>Parameter Co-adaptation:</strong> Explores optimal surge and discount levels recursively, improving pricing efficiency.</li>
+        </ul>
+      </div>
+
+      <!-- Images -->
+      <div class="image-grid">
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/25_learning_curve_revenue.png" alt="Revenue Learning Curve" />
+          </div>
+          <div class="image-caption">
+            <h4>Revenue Learning Curve</h4>
+            <p>Total revenue trajectory across learning episodes as pricing parameters optimize.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/26_learning_curve_utilization.png" alt="Utilization Learning Curve" />
+          </div>
+          <div class="image-caption">
+            <h4>Utilization Learning Curve</h4>
+            <p>Average charger utilization trajectory showing convergence to target thresholds.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/27_wait_time_reduction.png" alt="Wait Time Reduction" />
+          </div>
+          <div class="image-caption">
+            <h4>Wait-Time Proxy Reduction</h4>
+            <p>Expected customer wait times showing stabilization and minimization.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/28_pricing_efficiency_trajectory.png" alt="Pricing Efficiency" />
+          </div>
+          <div class="image-caption">
+            <h4>Pricing Efficiency Trajectory</h4>
+            <p>Pricing efficiency metrics (total revenue/total energy) trajectory over time.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="image-wrapper">
+            <div class="img-placeholder"><div class="spinner"></div><span>Loading…</span></div>
+            <img data-src="../outputs/figures/29_feedback_loop_summary.png" alt="Feedback Loop Summary" />
+          </div>
+          <div class="image-caption">
+            <h4>Feedback Loop Summary</h4>
+            <p>2x2 layout combining all four KPIs showing joint optimization behavior.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== IMAGE MODAL ==================== -->
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <img class="modal-img" src="" alt="Enlarged view" />
+      <div class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><span class="footer-brand">OP'26 Analytics</span> — Agentic AI Dynamic Tariff Optimization</p>
+      <div class="footer-divider"></div>
+      <p>Built with ❤️ for smarter EV charging infrastructure &nbsp;·&nbsp; Multi-Agent AI System &nbsp;·&nbsp; 2026</p>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="app.js"></script>
+
+</body>
+</html>
